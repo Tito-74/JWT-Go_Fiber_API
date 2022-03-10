@@ -11,6 +11,7 @@ import (
 func RoutesSetup(app *fiber.App){
 	app.Get("/", routes.Hello)
 	app.Post("/api/register", routes.Register)
+	app.Post("/api/login", routes.Login)
 	
 }
 
